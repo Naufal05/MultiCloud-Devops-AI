@@ -1,0 +1,45 @@
+
+
+ 1  docker -v
+    2  ls
+    3  ls -a
+    4  $ curl -fsSL https://get.docker.com -o install-docker.sh
+    5  curl -fsSL https://get.docker.com -o install-docker.sh
+    6  ls
+    7  sudo sh install-docker.sh
+    8  docker -v
+    9  time docker run ==rm hello-world
+   10  time docker run --rm hello-world
+   11  ls
+   12  ls -a
+   13  docker ps
+   14  docker ps -a
+   15  docker images
+   16  docker stats
+   17  docker ps
+   18  docker ps -a
+   19  docker images
+   20  docker run -d alpine sleep 1000
+   21  docker stats
+   22  1.docker run -it -d -p 8080:8080 jenkins/Jenkins:latest
+   23  docker run -it -d -p 8080:8080 jenkins/Jenkins:latest
+   24  docker run -it -d -p 8080:8080 jenkins/jenkins:latest
+   25  docker ps
+   26  docker ps | grep jenkins
+   27  docker exec -it 3acebabaf530 /bin/bash
+   28  ls
+   29  vi Dockerfile
+   30  docker images
+   31  docker build -t mnaufalmz .
+   32  docker images
+   33  docker tag e52e57b5cb9a mnaufalmz/mnaufalmz:latest
+   34  docker images
+   35  docker login
+   36  docker push mnaufalmz/mnaufalmz:latest
+
+
+FROM ubuntu
+MAINTAINER clouddevopshub@gmail.com
+RUN apt-get update
+RUN apt-get install nginx -y
+CMD [“echo”,”Image created”]
