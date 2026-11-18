@@ -43,3 +43,49 @@ MAINTAINER clouddevopshub@gmail.com
 RUN apt-get update
 RUN apt-get install nginx -y
 CMD [“echo”,”Image created”]
+
+
+optmize
+--------
+FROM alpineslim
+RUN apt-get update && apt-get install nginx -y
+
+# you can take directly from the FROM nginx if its available.
+
+
+###########  DAY 04  ############
+ 1  apt-get update &&  sudo apt install docker.io -y
+    2  docker -v
+    3  vi Dockerfile
+    4  ls
+    5  rm Dockerfile
+    6  ls
+    7  vi Dockerfile
+    8  rm Dockerfile
+    9  vi Dockerfile
+   10  cat Dockerfile
+   11  docker build -t mnzimage .
+   12  docker images
+   13  docker run -it ubuntu
+   14  docker ps -a
+   15  docker start db6bb17986e5
+   16  docker ps
+   17  docker commit db6bb17986e5 johndoeimage
+   18  docker images
+   19  docker save johndoeimage:latest > johndoebackup.tar
+   20  ls
+   21  docker system prune
+   22  docker image prune -a
+   23  git clone https://github.com/CloudDevOpsHub/Dockerfile-Advance-Demo.git
+   24  ls
+   25  cd Dockerfile-Advance-Demo/
+   26  ls
+   27  docker build -f Dockerfile.bloated -t app:bloated
+   28  docker images
+   29  docker build -f Dockerfile.bloated -t app:bloated
+   30  docker build -f Dockerfile.bloated -t app:bloated .
+   31  docker images
+   32  docker build -f Dockerfile.optimized -t app:optimized .
+   33  docker images
+   34  docker run app:optimized
+
