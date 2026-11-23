@@ -1,4 +1,30 @@
- 3  gcloud container clusters get-credentials day-1 --region us-east4 --project promptopia-444210ls
+Pod is eqivalent to container
+
+
+Namespace
+----------
+-	Isolation of the environment
+-	To share a kub cluster
+Using cli:
+    5  gcloud container clusters get-credentials day-1 --region us-east4 --project promptopia-444210
+    6  kubectl get nodes
+    7  kubectl get ns
+    8  kubectl create ns dev	// dev ns created
+    9  kubectl get ns
+
+Using yaml:
+1.	Create vi qans.yaml
+-	---
+-	apiVersion: v1
+-	kind: Namespace
+-	metadata:
+-	    name: qa
+Kind	// is the components in the K8
+Metadata	// info related to what is this used for
+
+
+
+3  gcloud container clusters get-credentials day-1 --region us-east4 --project promptopia-444210ls
     4  kubectl get nodes
     5  gcloud container clusters get-credentials day-1 --region us-east4 --project promptopia-444210
     6  kubectl get nodes
