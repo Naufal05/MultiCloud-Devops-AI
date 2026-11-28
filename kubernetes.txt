@@ -82,3 +82,83 @@ Day 2 of K8 / 19-11-2026
    35  kubectl get svc
    36  kubectl describe po nginx
    37  history
+
+-------------------------------------------------------------------------------------------------------
+Day 03  
+
+
+  2  whoami
+    3  gcloud container clusters get-credentials day-1 --region us-east4 --project promptopia-444210ls
+    4  kubectl get nodes
+    5  gcloud container clusters get-credentials day-1 --region us-east4 --project promptopia-444210
+    6  kubectl get nodes
+    7  kubectl get ns
+    8  kubectl create ns dev
+    9  kubectl get ns
+   10  history
+   11  ls
+   12  mkdir batch-45
+   13  cd batch-45/
+   14  ls
+   15  ls -a
+   16  vi qans.yaml
+   17  cat qans.yaml 
+   18  kubectl apply -f qans.yaml
+   19  kubectl get ns
+   20  history
+   21  ls
+   22  gcloud container clusters get-credentials day-2 --region us-east4 --project promptopia-444210
+   23  ls
+   24  cd .kube/config
+   25  cd .kube
+   26  ls
+   27  kubectl get cluster-info
+   28  kubectl cluster-info
+   29  kubectl run nginx --image=nginx:1.16
+   30  kubectl get pod
+   31  kubectl get svc
+   32  kubectl get svc -w
+   33  kubectl logs nginx
+   34  kubectl get pod
+   35  kubectl get svc
+   36  kubectl describe po nginx
+   37  history
+   38  exit
+   39  gcloud container clusters get-credentials day-3 --region us-east4 --project promptopia-444210
+   40  kubectl create deployment nginxdeploy --image=nginx
+   41  kubectl get deploy
+   42  kubectl get po
+   43  kubectl delete po nginxdeploy-58d967594c-t5rls
+   44  kubectl get po
+   45  kubectl get deploy
+   46  kubectl get po
+   47  kubectl edit po nginxdeploy-58d967594c-zpk6g
+   48  kubectl get deploy
+   49  kubectl edit deploy nginxdeploy
+   50  kubectl get po
+   51  history
+   52  clear
+   53  kuebctl run jenkins –image=jenkins/jenkins:lta
+   54  kubectl run jenkins –image=jenkins/jenkins:lta
+   55  kubectl run jenkins --image=jenkins/jenkins:lta
+   56  kubectl get po
+   57  clear
+   58  kubectl run jenkins --image=jenkins/jenkins:lta
+   59  kubectl delete po jenkins
+   60  kubectl get po
+   61  kubectl run jenkins --image=jenkins/jenkins:lts
+   62  kubectl get po
+   63  kubectl get svc
+   64  ls
+   65  cd batch-45/
+   66  ls
+   67  cd --
+   68  clear
+   69  kubectl get po
+   70  kubectl exec -it jenkins bash
+   71  kubectl exec jenkins -- cat /var/jenkins_home/secrets/initialAdminPassword
+   72  history
+
+
+
+
